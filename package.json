@@ -22,6 +22,6 @@
     "level-live-stream": "~1.4.7"
   },
   "bin":{
-    "soldair-jsla-leveltalk":"npm start"
+    "soldair-jsla-leveltalk":"./start.sh"
   }
 }
