@@ -16,7 +16,7 @@ module.exports = function(container){
       container.appendChild(blocks[data.key]); 
 
     } else if(!data.value){
-
+      if(!blocks[data.key]) return;
       if(blocks[data.key].stream) blocks[data.key].stream.end();
       container.removeChild(blocks[data.key]); 
       delete blocks[data.key]
