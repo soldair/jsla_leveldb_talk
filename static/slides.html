@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>leveldb And Node.js: Choose Your Own Adventure</title>
+  </head>
+  <body>
+    <div id="main">
+
+      <div class="slide" id="slide-1">
+        <a name="slide-1"></a>
+        <h1>leveldb And Node.js: Choose Your Own Adventure</h1>
+
+      </div>
+      <div class="slide" id="slide-2">  
+        <a name="slide-2"></a>
+        nodebases are here
+
+        <h3>this nodebase thing is happening because</h3>
+        <h3>leveldb is great at persisting data, node is great at communicating over the network, and npm fosters the love of modular things.</h3>
+       
+      </div>
+      <div class="slide" id="slide-3">
+        <a name="slide-3"></a>
+        <h3>level basic api</h3>
+        <ul>
+          <li>get(key,cb)</li>
+          <li>put(key,cb)</li>
+          <li>del(key,cb)</li>
+          <li>batch(key,cb)</li>
+        </ul> 
+      </div>
+      <div class="slide" id="slide-4">
+        <a name="slide-4"></a>
+        <h3>leveldb streams api</h3>
+        <ul>
+          <li>createReadStream(key,cb)</li>
+          <li>createValueStream(key,cb)</li>
+          <li>createKeyStream(key,cb)</li>
+          <li>createWriteStream(key,cb)</li>
+        </ul> 
+      </div>
+      <div class="slide" id="slide-5">
+        <a name="slide-5"></a>
+
+        <h3>Using storage engines that fit your workload should be easy.</h3>
+
+        <h3>You should be able to access your data however it makes sense to code amazing things.</h3>
+
+      </div>
+      <div class="slide" id="slide-6">
+        <a name="slide-6"></a>
+        <div> Moar backends! </div>
+
+        leveldown<br>
+        level-hyper<br>
+        level-basho<br>
+        lmdb<br>
+        memdown<br>
+        mysqldown<br>
+          <b> or in the browser!</b><br>
+        Level.js - indexeddb<br>
+        level-gap - localstorage<br>
+      </div>
+
+      <div class="slide" id="slide-7">
+        <a name="slide-7"></a>
+        <h2>Modules!</h2>
+        <ul>
+          <li>level-sublevel</li>
+          <li>level-live-stream</li>
+        </ul>
+      </div>
+
+      <div class="slide" id="slide-8">
+        <a name="slide-8"></a>
+        <h3>leveldb has a single keyspace</h3>
+        <img src="/level_keyspace.png" alt="srsly one keyspace"/>        
+      </div>
+
+      <div class="slide" id="slide-9">
+        <a name="slide-9"></a>
+        <h3>sublevel makes it really easy to break your level into multiple namespaces</h3>
+        <img src="/sublevel_example.png" alt="sublevel readme example"/>
+        <div><small>*note: the module is now just called level instead of levelup.</small></div>
+      </div>
+
+      <div class="slide" id="slide-10">
+        <a name="slide-10"></a>
+        <h3>the keys after the sublevel example.</h3>
+        <img src="/level_sublevel_keyspace.png" alt="sublevel keys"/> 
+      </div>
+
+      <div class="slide" id="slide-11">
+        <a name="slide-11"></a>
+        <h3>if you want a live stream of events just add level-live-stream.</h3>
+        <img src="/livestream_example.png" alt="livestream example"/>
+        <h3>the magic really starts when you combine it with sub level so you only get a live stream of a specific section.</h3>
+      </div>
+
+      <div class="slide" id="slide-12">
+        <a name="slide-12"></a>
+        <h2>demo!</h2>
+        <h3>realtime mouse position streaming</h3>
+        <a href="/" target='_blank'>ooooh</a>
+      </div>
+
+      <div class="slide" id="slide-13">
+        <a name="slide-13"></a>
+
+        <h3>every active user has one key in the users sublevel.</h3>
+        <img src="/users_keys.png" alt="users keys"/>
+        <h3>live-stream on the users sublevel broadcasts the current state of all users to all connected users</h3>
+
+      </div>
+
+
+      <div class="slide" id="slide-14">
+        <a name="slide-14"></a>
+        <h2>demo!</h2>
+        <h3>wait what if we saved every movement for all the people and we could replay it!</h3>
+        <a href="/replay.html" target='_blank'>ooooh</a>     
+      </div>
+
+      <div class="slide" id="slide-15">
+        <a name="slide-15"></a>
+
+        <h3>every move event is also saved to a logging sublevel</h3>
+        <img src="/log_keys.png" alt="log keys"/>
+        <h3>i can replay any segment of time from this log and pipe to my rendering stream!</h3>
+
+      </div>
+
+      <div class="slide" id="slide-16">
+        <a name="slide-16"></a>
+        <h2>Links!</h2>
+
+        <div class="melinks">
+          @soldair<br/>
+          http://github.com/soldair
+        </div>
+
+        <a href="https://github.com/rvagg/node-levelup">https://github.com/rvagg/node-levelup</a>
+        <a href="https://github.com/dominictarr/level-sublevel">https://github.com/dominictarr/level-sublevel</a>
+        <a href="https://github.com/dominictarr/level-live-stream">https://github.com/dominictarr/level-live-stream</a><br/>
+      </div>
+
+    </div>
+  </body>
+</html>
+
+

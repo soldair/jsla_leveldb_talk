@@ -1,0 +1,24 @@
+{
+  "name": "soldair-jsla-leveltalk",
+  "version": "0.0.0",
+  "description": "about the levels!",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/*.js",
+    "start": "browserify -r ./client -o static/bundle.js && node server.js"
+  },
+  "author": "Ryan Day <soldair@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "through": "~2.3.4",
+    "shoe": "0.0.15",
+    "multilevel": "~5.5.0",
+    "browserify": "~2.34.3",
+    "level": "~0.17.0-1",
+    "ecstatic": "~0.4.12",
+    "random-color": "0.0.0",
+    "monotonic-timestamp": "0.0.8",
+    "level-sublevel": "~5.1.1",
+    "level-live-stream": "~1.4.7"
+  }
+}

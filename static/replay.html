@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <div id="main">
+      <h2>Mouse Replay</h2> <a href="/">join the action</a>
+    </div>
+
+    <script src="/bundle.js"></script>
+    <script>
+      require('./client').replay(function(){
+        var main = document.getElementById('main');
+        main.innerHTML = "<h1 style='text-align:center;margin-top:300px'>FIN.</h1>";
+        
+      });
+    </script>
+  </body>
+</html>
