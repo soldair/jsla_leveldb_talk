@@ -20,5 +20,8 @@
     "monotonic-timestamp": "0.0.8",
     "level-sublevel": "~5.1.1",
     "level-live-stream": "~1.4.7"
+  },
+  "bin":{
+    "soldair-jsla-leveltalk":"npm start"
   }
 }
